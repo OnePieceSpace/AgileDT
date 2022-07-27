@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Version>0.0.1.2</Version>
+	<LangVersion>8.0</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags></PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>修复业务方法返回值为void的时候生成代理类失败的问题</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AgileHttp" Version="0.0.6" />
+    <PackageReference Include="DotNetCore.Natasha.CSharp.All" Version="3.5.0" />
+    <PackageReference Include="FreeSql" Version="3.2.665" />
+    <PackageReference Include="FreeSql.Provider.MySql" Version="3.2.665" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+  </ItemGroup>
+
+</Project>
